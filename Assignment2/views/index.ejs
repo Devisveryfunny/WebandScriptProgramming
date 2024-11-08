@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <!--CSS File-->
+  <link rel='stylesheet' href='/Content/app.css' />
+  <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
+  <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css'/>
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">INFR3120</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <% if (title == "Home") { %>
+            <a class="nav-link active" href="/home">
+          <% } else { %>
+            <a class="nav-link" href="/home">
+          <% } %>
+            <i class="fa-solid fa-house"></i> Home</a>
+        </li>
+
+        <li class="nav-item">
+          <% if (title == "About") { %>
+            <a class="nav-link active" href="/about">
+          <% } else { %>
+            <a class="nav-link" href="/about">
+          <% } %>
+            <i class="fa-solid fa-person"></i> About</a>
+        </li>
+
+        <li class="nav-item">
+          <% if (title == "Projects") { %>
+            <a class="nav-link active" href="/projects">
+          <% } else { %>
+            <a class="nav-link" href="/projects">
+          <% } %>
+            <i class="fa-solid fa-briefcase"></i> Projects</a>
+        </li>
+
+        <li class="nav-item">
+          <% if (title == "Contact Me") { %>
+            <a class="nav-link active" href="/contact">
+          <% } else { %>
+            <a class="nav-link" href="/contact">
+          <% } %>
+            <i class="fa-solid fa-phone"></i> Contact Me</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Main Content-->
+<main>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4 text-center">Welcome to the <%= title %> page.</h1>
+    </div>
+  </div>
+</main>
+<!--Footer-->
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
+  <div class="container text-center">
+    <!-- Copyright Text -->
+    <p class="text-white">&copy; Copyright 2024. All Rights Reserved.</p>
+
+    <!-- Social Media Links -->
+    <div class="mt-2">
+      <a href="https://github.com/Devisveryfunny" target="_blank" class="text-white me-3">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/dev-parmar-6433bb2a8/" target="_blank" class="text-white">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!--Script Files-->
+<script src="/Scripts/app.js"></script>
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/jquery/dist/js/jquery.min.js"></script>
+</body>
+</html>
