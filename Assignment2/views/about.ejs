@@ -1,0 +1,36 @@
+<%- include('partials/header', { title: 'About Me' }) %>
+<%- include('partials/main_nav', { title: 'About Me' }) %>
+
+<div class="container">
+    <h1>About Me</h1>
+
+    <!-- Video and Image Section -->
+    <section class="video-image-container">
+        <video id="myvid" width="400" height="240" controls poster="on_record.jpg" preload="auto" autoplay muted loop>
+            <source src="/Assets/images/Videos/on_record.mp4" type="video/mp4">
+            <source src="/Assets/images/Videos/on_record.ogv" type="video/ogg">
+        </video>
+
+        <img src="/Assets/images/Dev_.jpg" alt="Image of Dev" width="220" height="220" class="side-image bordered-image">
+    </section>
+
+    <!-- About Dev Section -->
+    <section>
+        <h3><b>About Dev.</b></h3>
+        <div class="about-box">
+            <p>Hello. This is Dev. I am a University Year 2 Student at UOIT. I am in the Web and Script class. I am a very interested person in regards to what I can learn. I like to learn as much as possible to better myself. I am doing Networking, Web and Script Programming, Math, and some other activities outside of school.</p>
+        </div>
+    </section>
+
+    <!-- Transcript of the Video -->
+    <section>
+        <h3><b>Transcript of Video.</b></h3>
+        <div class="about-box">
+            <p>Hello. This is Dev. I am a University Year 2 Student at UOIT. I am in the Web and Script class. I am a very interested person in regards to what I can learn. I like to learn as much as possible to better myself. I am doing Networking, Web and Script Programming, Math, and some other activities outside of school.</p>
+        </div>
+        <br>
+    </section>
+</div>
+
+<%- include('partials/footer') %>
+<%- include('partials/bottom_nav') %>
